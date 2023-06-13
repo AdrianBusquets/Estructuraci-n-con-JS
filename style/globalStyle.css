@@ -1,3 +1,13 @@
+:root{
+    --principal: rgba(241, 190, 88, 0.526);
+    --secundario:rgba(76, 55, 15, 0.526);
+    --degradado: linear-gradient(to right top, #f3da8f, #746222, #cbc36b);
+}
+
+body{
+    overflow-x: hidden;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -17,23 +27,152 @@ a{
 .btn{
     width: 12vw;
     padding: 1vw;
-    background-color: rgb(143, 147, 146);
+    background-color: var(--principal);
+    color: black;
     text-align: center;
-    border-radius: 8%;
+    border-radius: 1rem;
     transition: 0.8s all ease-in;
     box-sizing: border-box;
 }
 
 .btn:hover{
-    background-color: rgb(0, 0, 0);
+    background-color: var(--secundario);
     padding: 1.5vw 1.5vw;
 }
 
-#text_btn{
-    color: rgb(0, 0, 0);
+#text_btn:hover{
+    font-size: 1.2rem;
+    color: var(--principal);
 }
 
-#text_btn:hover{
-    color: rgb(255, 255, 255);
-    font-size: medium;
+.selector{
+    width: 17vw;
+    height: 7vh;
+    text-align: center;
+    border-radius: 0.5rem;
+    border: none;
+}
+.selector:focus{
+    outline: 2px solid var(--principal);
+}
+
+.titulo{
+    font-size: 3rem;
+    font-weight: lighter;
+    padding-bottom: 1rem;
+}
+
+.titulo b{
+    color: var(--principal);
+    font-weight: bold;
+}
+
+.titulo_texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    text-align: center;
+}
+
+
+/************ ANUNCIO *************/
+.articulo_anuncio{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    box-shadow: 9px 8px 28px -11px rgba(0, 0, 0, 0.362);
+    border-radius: 0.8rem;
+    width: 22vw;
+    word-wrap: break-word;
+    overflow: hidden;
+    transition: all 0.6s ease;
+}
+
+.articulo_anuncio img{
+    border-radius: 0.4rem;
+    transition: all 0.6s ease;
+}
+
+.articulo_anuncio:hover img{
+    scale: 1.3;
+}
+
+.articulo_anuncio:hover{
+    box-shadow: 9px 8px 28px -11px rgba(0, 0, 0, 0.734);
+}
+
+
+
+.anuncio_estado{
+    position: absolute;
+    top: 0.8rem;
+    left: 0.8em;
+    width: 8vw;
+    border-radius: 5rem;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.disponible{
+    background-color: rgb(5, 158, 5);
+}
+
+.vendido{
+    background-color: rgb(171, 48, 48);
+}
+
+
+.anuncio_texto{
+    height: 25vh;
+    position: relative;
+    background-color: white;
+}
+
+.precio_articulo{
+    position: absolute;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: var(--principal);
+    width: bold;
+}
+
+.texto_top{
+    padding: 1rem;
+    height: 18vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.texto_top h4{
+    width: bold;
+    font-size: 1.3rem;
+}
+
+.texto_top span{
+    color:rgb(102, 101, 101);
+}
+
+.texto_botton{
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: var(--principal);
+    border: 1px dashed var(--principal);
+}
+
+.categoria_anuncio{
+    width: 11vw;
+    margin: 1rem 0;
+}
+
+.fecha_anuncio{
+    width: 11vw;
+    margin: 1rem 0;
 }

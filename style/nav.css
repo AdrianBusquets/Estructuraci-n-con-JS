@@ -1,14 +1,23 @@
+header{
+    display: flex;
+    justify-content: center;
+}
+
 .nav{
     display: flex;
     justify-content: space-between;
-    width: 100vw;
+    width: 80vw;
     padding: 2vw 10vw;
+    margin-top: 5vh;
     align-items: center;
     color: black;
     box-sizing: border-box;
-    background-image: linear-gradient(to right top, #f4f5f7, #5f6061, #f4f5f7);
+    background-image: var(--degradado);
     box-shadow: 2px 8px 16px 4px rgba(124,118,118,0.57);
     margin-bottom: 5vw;
+    border-radius: 0.8rem;
+    position: fixed;
+    z-index: 100000;
 }
 
 .nav_ol{
@@ -25,6 +34,6 @@
 }
 
 .nav_ol li a:hover{
-    color: rgb(30, 244, 248);
+    color: white;
 }
 
