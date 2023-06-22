@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Presto.es</title>
     <script src="https://kit.fontawesome.com/e48d166edc.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fonts-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLKIlwQp6LFn18zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXge10g==" crossorigin="anonymous" /> -->
         <link rel="stylesheet" href="/style/globalStyle.css">
         <link rel="stylesheet" href="/style/nav.css">
         <link rel="stylesheet" href="/style/main.css">
@@ -56,46 +57,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam maxime nostrum enim omnis non, ipsum provident quos accusamus sapiente.</p>
             </div>
             <div class="lista_categorias">
-                <article class="main_article">
-                    <i class="fa fa-car"></i>
-                    <h4>Coche</h4>
-                    <span>123 anuncios</span>
-                </article class="main_article">
-                <article class="main_article">
-                    <i class="fa fa-solid fa-laptop-code"></i>
-                    <h4>Electronica</h4>
-                    <span>1233 anuncios</span>
-                </article class="main_article">
-                <article class="main_article">
-                    <i class="fa fa-motorcycle"></i>
-                    <h4>Moto</h4>
-                    <span>1523 anuncios</span>
-                </article class="main_article">
-                <article class="main_article">
-                    <i class="fa fa-socks"></i>
-                    <h4>Ropa</h4>
-                    <span>1236 anuncios</span>
-                </article class="main_article">
-                <article class="main_article">
-                    <i class="fa fa-dumbbell"></i>
-                    <h4>Deporte</h4>
-                    <span>1283 anuncios</span>
-                </article class="main_article">
-                <article class="main_article">
-                    <i class="fa fa-solid fa-seedling"></i>
-                    <h4>Jardineria</h4>
-                    <span>123 anuncios</span>
-                </article class="main_article">
-                <article class="main_article">
-                    <i class="fa fa-bed"></i>
-                    <h4>Casa</h4>
-                    <span>123 anuncios</span>
-                </article class="main_article">
-                <article class="main_article">
-                    <i class="fa fa-utensils"></i>
-                    <h4>Cocina</h4>
-                    <span>123 anuncios</span>
-                </article class="main_article">
+                
             </div>
         </section>
         <section class="section_formulario">
@@ -105,11 +67,11 @@
                 <div class="formulario_derecha">
                     <h2 class="titulo">Trabaja <b>con nosotros</b></h2>
                     <p class="titulo_texto">Envia tu solicitud para formar parte de nuestro equipo</p>
-                    <form action="">
+                    <form action="" class="formulario">
                         <input class="formulario_input" type="text" placeholder="Nombre">
                         <input class="formulario_input" type="email" placeholder="Email">
                         <textarea class="formulario_input" cols="30" rows="10" placeholder="Carta de presentación"></textarea>
-                        <div class="btn"><a id="text_btn" href="#">Enviar solicitud</a></div>
+                        <div class="btn"><a id="text_btn" type="submit" href="#">Enviar solicitud</a></div>
                     </form>
                 </div>
             </div>
@@ -249,37 +211,43 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <section class="footer_section left">
-            <h4>Ponerse en contacto</h4>
-            <ol>
-                <li><i class="fa fa-map"></i> 123, Madrid, España</li>
-                <li><i class="fa fa-phone"></i> +034 678 321 432</li>
-                <li><i class="fa fa-envelope"></i> info@example.com</li>
-            </ol>
-            <div class="iconos_footer">
-                <div><i class="fa fa-twitter"></i></div>
-                <div><i class="fa fa-facebook"></i></div>
-                <div><i class="fa fa-linkedin"></i></div>
-                <div><i class="fa fa-youtube"></i></div>
-            </div>
-        </section>
-        <section class="footer_section center">
-            <h4>Enlaces rápidos</h4>
-            <ol>
-                <li><a href="#">Sobre nosotros</a></li>
-                <li><a href="#">Politica</a></li>
-                <li><a href="#">Más servicios</a></li>
-                <li><a href="#">Condiciones</a></li>
-            </ol>
-        </section>
-        <section class="footer_section right">
-            <h4>Información</h4>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-            <div class="btn_footer">
-                <input type="text"><div class="btn"><a id="text_btn" href="#">Enviar</a></div>
-            </div>
-        </section>
+    <footer>
+        <div class="footer">
+            <section class="footer_section left">
+                <h4>Ponerse en contacto</h4>
+                <ol>
+                    <li><i class="fa fa-map"></i> 123, Madrid, España</li>
+                    <li><i class="fa fa-phone"></i> +034 678 321 432</li>
+                    <li><i class="fa fa-envelope"></i> info@example.com</li>
+                </ol>
+                <div class="iconos_footer">
+                    <div><i class="fa fa-twitter"></i></div>
+                    <div><i class="fa fa-facebook"></i></div>
+                    <div><i class="fa fa-linkedin"></i></div>
+                    <div><i class="fa fa-youtube"></i></div>
+                </div>
+            </section>
+            <section class="footer_section center">
+                <h4>Enlaces rápidos</h4>
+                <ol>
+                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="#">Politica</a></li>
+                    <li><a href="#">Más servicios</a></li>
+                    <li><a href="#">Condiciones</a></li>
+                </ol>
+            </section>
+            <section class="footer_section right">
+                <h4>Información</h4>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                <div class="btn_footer">
+                    <input type="text" placeholder="Email"><div class="btn"><a id="text_btn" href="#">Enviar</a></div>
+                </div>
+            </section>
+        </div>
     </footer>
+<script src="js/scroll.js"></script>
+<script src="js/categories.js"></script>
+<script src="js/form.js"></script>
+<script src="js/anuncios.js"></script>
 </body>
 </html>

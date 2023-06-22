@@ -1,3 +1,4 @@
+
 .footer{
     background-color: var(--secundario);
     width: 100vw;
@@ -51,12 +52,21 @@
     margin: 1vh;
 }
 
-.btn_footer{
-    display: flex;
-}
+
 
 .btn_footer input{
     position: relative;
     width: 100%;
     border-radius: 0.5rem;
+    border: none;
+    text-align: center;
+}
+
+.btn_footer input:focus{
+    outline: solid 3px var(--principal);
+}
+.btn_footer{
+    display: flex;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
 }

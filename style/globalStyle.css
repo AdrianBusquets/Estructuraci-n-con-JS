@@ -15,6 +15,28 @@ body{
     box-sizing: border-box;
 }
 
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: var(--principal) #ffffff;
+    }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+    }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+    }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--principal);
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+    }
+
 ul, ol{
     list-style: none;
 }
@@ -26,6 +48,7 @@ a{
 
 .btn{
     width: 12vw;
+    height: auto;
     padding: 1vw;
     background-color: var(--principal);
     color: black;
@@ -37,11 +60,10 @@ a{
 
 .btn:hover{
     background-color: var(--secundario);
-    padding: 1.5vw 1.5vw;
 }
 
 #text_btn:hover{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: var(--principal);
 }
 
