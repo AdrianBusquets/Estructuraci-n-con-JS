@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../style/img/notas.png" type="image/svg+xml">
+    <title>Anuncios-Presto.es</title>
+    <script src="https://kit.fontawesome.com/e48d166edc.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fonts-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLKIlwQp6LFn18zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXge10g==" crossorigin="anonymous" /> -->
+        <link rel="stylesheet" href="../style/globalStyle.css">
+        <link rel="stylesheet" href="../style/nav.css">
+        <link rel="stylesheet" href="../style/mainAnuncios.css">
+        <link rel="stylesheet" href="../style/listaAnuncios.css">
+        <link rel="stylesheet" href="../style/footer.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <h2><i class="fa fa-coins"></i> Presto.es</h2>
+            <ol class="nav_ol">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="/pages/anuncios.html">Anuncios</a></li>
+                <li><a href="#">Categorias</a></li>
+                <li><a href="#">Perfil</a></li>
+                <li><div class="btn"><a id="text_btn" href="#">Crear anuncio</a></div></li>
+            </ol>
+        </nav>
+    </header>
+    <main>
+        <div class="top_anuncios">
+            <img src="https://images.pexels.com/photos/376368/pexels-photo-376368.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            <h1>Busca entre nuestros <b>Anuncios</b></h1>
+        </div>
+        <section class="filtrar_anuncios">
+            <div class="filtrado_top">
+                <input placeholder="Buscar" class="selector filtrado_alto" type="text" id="buscadorAnuncios">
+                <select class="selector filtrado_alto" id="categoriasAnuncios">
+
+                </select>
+                <input placeholder="Min" class="selector filtrado_alto" type="number" id="min">
+                <input placeholder="Max" class="selector filtrado_alto" type="number" id="max">
+                <div class="btn"><a id="filtrar" href="#">Filtrar</a></div>
+        </div>
+        <div class="filtrado_bottom" id="ordenar">
+            <select class="selector">
+                <option value="Default">Ordena</option>
+                <option value="A-Z">A-Z</option>
+                <option value="Z-A">Z-A</option>
+                <option value="Mayor precio">Mayor precio</option>
+                <option value="Menor precio">Menor precio</option>
+                <option value="Más reciente">Más reciente</option>
+                <option value="Más antiguo">Más antiguo</option>
+            </select>
+        </div>
+        </section>
+        <div class="ultimos_anuncios lista_anuncios">
+
+        </div>
+    </main>
+
+
+
+
+    <footer>
+        <div class="footer">
+            <section class="footer_section left">
+                <h4>Ponerse en contacto</h4>
+                <ol>
+                    <li><i class="fa fa-map"></i> 123, Madrid, España</li>
+                    <li><i class="fa fa-phone"></i> +034 678 321 432</li>
+                    <li><i class="fa fa-envelope"></i> info@example.com</li>
+                </ol>
+                <div class="iconos_footer">
+                    <div><i class="fa fa-twitter"></i></div>
+                    <div><i class="fa fa-facebook"></i></div>
+                    <div><i class="fa fa-linkedin"></i></div>
+                    <div><i class="fa fa-youtube"></i></div>
+                </div>
+            </section>
+            <section class="footer_section center">
+                <h4>Enlaces rápidos</h4>
+                <ol>
+                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="#">Politica</a></li>
+                    <li><a href="#">Más servicios</a></li>
+                    <li><a href="#">Condiciones</a></li>
+                </ol>
+            </section>
+            <section class="footer_section right">
+                <h4>Información</h4>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                <div class="btn_footer">
+                    <input type="text" placeholder="Email"><div class="btn"><a id="text_btn" href="#">Enviar</a></div>
+                </div>
+            </section>
+        </div>
+    </footer>
+
+    <script src="../js/scroll.js"></script>
+    <script src="../js/anuncios.js"></script>
+
+</body>

@@ -1,51 +1,51 @@
-let anuncios= [
+let anuncios= 
     [
         {
             "id":1,
             "name": "Huawei X5",
-            "category": "Elettronica",
+            "category": "Electronica",
             "price": "120.12",
             "type" : "sell"
         },
         {
             "id": 2,
             "name": "Fiat 500",
-            "category": "Motori",
+            "category": "Coche",
             "price": "2000.32",
             "type" : "search"
         },
         {
             "id": 3,
             "name": "Mazza da Baseball",
-            "category": "Sport",
+            "category": "Deporte",
             "price": "20.15",
             "type" : "sell"
         },
         {
             "id": 4,
             "name": "Bilocale",
-            "category": "Immobili",
+            "category": "Casa",
             "price": "30000.54",
             "type" : "search"
         },
         {
             "id": 5,
             "name": "Felpa usata",
-            "category": "Abbigliamento",
+            "category": "Ropa",
             "price": "10.42",
             "type" : "sell"
         },
         {
             "id": 6,
             "name": "Divani due posti",
-            "category": "Arredamento",
+            "category": "Casa",
             "price":"400.64",
             "type" : "search"
         },
         {
             "id": 7,
             "name": "Pala",
-            "category": "Giardinaggio",
+            "category": "Jardineria",
             "price":"30.45",
             "type" : "sell"
         },
@@ -59,49 +59,49 @@ let anuncios= [
         {
             "id": 9,
             "name": "TV Samsung",
-            "category": "Elettronica",
+            "category": "Electronica",
             "price": "230.42",
             "type" : "sell"
         },
         {
             "id": 10,
             "name": "Ford Puma",
-            "category": "Motori",
+            "category": "Coche",
             "price": "25000.02",
             "type" : "sell"
         },
         {
             "id": 11,
             "name": "Pallone da calcio",
-            "category": "Sport",
+            "category": "Deporte",
             "price": "30.12",
             "type" : "search"
         },
         {
             "id": 12,
             "name": "Trilocale",
-            "category": "Immobili",
+            "category": "Casa",
             "price": "55000.54",
             "type" : "sell"
         },
         {
             "id": 13,
             "name": "Sciarpa scolorita",
-            "category": "Abbigliamento",
+            "category": "Ropa",
             "price": "5.23",
             "type" : "sell"
         },
         {
             "id": 14,
             "name": "Lampada",
-            "category": "Arredamento",
+            "category": "Casa",
             "price": "70.65",
             "type" : "sell"
         },
         {
             "id": 15,
             "name": "Concime",
-            "category": "Giardinaggio",
+            "category": "Jardineria",
             "price": "2.45",
             "type" : "search"
         },
@@ -115,21 +115,21 @@ let anuncios= [
         {
             "id": 17,
             "name": "Cuffie Sony",
-            "category": "Elettronica",
+            "category": "Electronica",
             "price": "120.65",
             "type" : "sell"
         },
         {
             "id": 18,
             "name": "Ducati Monster",
-            "category": "Motori",
+            "category": "Coche",
             "price": "12000.13",
             "type" : "sell"
         },
         {
             "id": 19,
             "name": "Pattini",
-            "category": "Sport",
+            "category": "Deporte",
             "price": "90.64",
             "type" : "search"
         },
@@ -137,21 +137,21 @@ let anuncios= [
         {
             "id": 21,
             "name": "Guanti invernali",
-            "category": "Abbigliamento",
+            "category": "Ropa",
             "price": "22.04",
             "type" : "sell"
         },
         {
             "id": 22,
             "name": "Scrivania in vetro",
-            "category": "Arredamento",
+            "category": "Casa",
             "price": "600.63",
             "type" : "search"
         },
         {
             "id": 23,
             "name": "Secchio",
-            "category": "Giardinaggio",
+            "category": "Jardineria",
             "price": "30.43",
             "type" : "search"
         },
@@ -165,49 +165,49 @@ let anuncios= [
         {
             "id": 25,
             "name": "Auricolari Sennheiser",
-            "category": "Elettronica",
+            "category": "Electronica",
             "price": "120.93",
             "type" : "sell"
         },
         {
             "id": 26,
             "name": "Fiat 300",
-            "category": "Motori",
+            "category": "Coche",
             "price": "2560.42",
             "type" : "sell"
         },
         {
             "id": 27,
             "name": "Set mazze da golf",
-            "category": "Sport",
+            "category": "Deporte",
             "price": "4320.43",
             "type" : "search"
         },
         {
             "id": 28,
             "name": "Posto augo",
-            "category": "Immobili",
+            "category": "Casa",
             "price": "2200.63",
             "type" : "search"
         },
         {
             "id": 29,
             "name": "Zaino Decathlon",
-            "category": "Abbigliamento",
+            "category": "Ropa",
             "price": "55.55",
             "type" : "sell"
         },
         {
             "id": 30,
             "name": "Comodino",
-            "category": "Arredamento",
+            "category": "Casa",
             "price": "210.12",
             "type" : "sell"
         },
         {
             "id": 31,
             "name": "Rastrello",
-            "category": "Giardinaggio",
+            "category": "Jardineria",
             "price": "5.62",
             "type" : "sell"
         },
@@ -221,21 +221,21 @@ let anuncios= [
         {
             "id": 33,
             "name": "IPhone X",
-            "category": "Elettronica",
+            "category": "Electronica",
             "price": "1300.41",
             "type" : "search"
         },
         {
             "id": 34,
             "name": "Nissan Juke",
-            "category": "Motori",
+            "category": "Coche",
             "price": "25420.40",
             "type" : "sell"
         },
         {
             "id": 35,
             "name": "Guanti da palestra",
-            "category": "Sport",
+            "category": "Deporte",
             "price": "11.54",
             "type" : "search"
         },
@@ -243,21 +243,21 @@ let anuncios= [
         {
             "id": 37,
             "name": "Scarpe Nike",
-            "category": "Abbigliamento",
+            "category": "Ropa",
             "price": "240.33",
             "type" : "sell"
         },
         {
             "id": 38,
             "name": "Poltrona",
-            "category": "Arredamento",
+            "category": "Casa",
             "price": "420.66",
             "type" : "search"
         },
         {
             "id": 39,
             "name": "Semi",
-            "category": "Giardinaggio",
+            "category": "Jardineria",
             "price": "4.43",
             "type" : "sell"
         },
@@ -271,49 +271,49 @@ let anuncios= [
         {
             "id": 41,
             "name": "Macbook Pro",
-            "category": "Elettronica",
+            "category": "Electronica",
             "price": "2340.37",
             "type" : "search"
         },
         {
             "id": 42,
             "name": "Dacia Duster",
-            "category": "Motori",
+            "category": "Coche",
             "price": "13350.73",
             "type" : "sell"
         },
         {
             "id": 43,
             "name": "Canoa",
-            "category": "Sport",
+            "category": "Deporte",
             "price": "520.03",
             "type" : "search"
         },
         {
             "id": 44,
             "name": "Cantina",
-            "category": "Immobili",
+            "category": "Casa",
             "price": "20000.12",
             "type" : "sell"
         },
         {
             "id": 45,
             "name": "Jeans",
-            "category": "Abbigliamento",
+            "category": "Ropa",
             "price": "55.54",
             "type" : "sell"
         },
         {
             "id": 46,
             "name": "Lampadario",
-            "category": "Arredamento",
+            "category": "Casa",
             "price": "280.54",
             "type" : "sell"
         },
         {
             "id": 47,
             "name": "Trattore",
-            "category": "Giardinaggio",
+            "category": "Jardineria",
             "price": "12000.09",
             "type" : "sell"
         },
@@ -332,41 +332,176 @@ let anuncios= [
             "type" : "sell"
         }
     ]
-]
 
-let contenedorHome = document.querySelector('.ultimos_anuncios')
 
-anuncios.forEach((element, i) => {
-    if (i <= 5){
-    let article= document.createElement('article')
-    article.classList.add('articulo_anuncio')
-    let disponible = true
-    if (i % 2 === 0){
-        disponible= false
+let contenedorHome = document.querySelector('.anuncios_home')
+let contenedorLista = document.querySelector('.lista_anuncios')
+let cantidadAnuncios= anuncios.length
+let contenedorCategorias= document.getElementById('categoriasAnuncios')
+let btnFiltrar = document.getElementById('filtrar')
+let buscador = document.getElementById('buscadorAnuncios')
+let maxPrecio = document.getElementById('max')
+let minPrecio = document.getElementById('min')
+let ordenar = document.getElementById('oredenar')
+
+function renderizarAnuncios(contenedor, limite){
+    if(contenedor === null){
+        return
     }
-    article.innerHTML= `
-        <img src="https://picsum.photos/560/340" alt="">
-            <span class="anuncio_estado ${disponible === true? 'Disponible' : 'Vendido'}">
-            ${disponible === true? 'Disponible' : 'Vendido'}</span>
-            <div class="anuncio_texto">
-                <span class="precio_articulo">${element.price}</span>
-                <div class="texto_top">
-                    <h4>${element.name}</h4>
-                    <span>${element.type}</span>
+    anuncios.forEach((element, i) => {
+        if (i <= limite){
+        let article= document.createElement('article')
+        article.classList.add('articulo_anuncio')
+        let disponible = true
+        if (i % 2 === 0){
+            disponible= false
+        }
+        article.innerHTML= `
+            <img src="https://picsum.photos/560/340" alt="">
+                <span class="anuncio_estado ${disponible === true? 'disponible' : 'vendido'}">
+                ${disponible === true? 'Disponible' : 'Vendido'}</span>
+                <div class="anuncio_texto">
+                    <span class="precio_articulo">${element.price}$</span>
+                    <div class="texto_top">
+                        <h4>${element.name}</h4>
+                        <span>${element.type}</span>
+                    </div>
+                    <div class="texto_botton">
+                        <span class="categoria_anuncio">
+                            <i class="fa fa-tag"></i>
+                            ${element.category}
+                            </span>
+                            <span class="fecha_anuncio">
+                                <i class="fa fa-calendar"></i>
+                                ${element.id}/06/2023
+                            </span>
+                    </div>
                 </div>
-                <div class="texto_botton">
-                    <span class="categoria_anuncio">
-                        <i class="fa fa-tag"></i>
-                        ${element.category}
-                        </span>
-                        <span class="fecha_anuncio">
-                            <i class="fa fa-calendar"></i>
-                            13/06/2023
-                        </span>
-                </div>
-            </div>
-        `
-        contenedorHome.appendChild(article)
+            `
+            contenedor.appendChild(article)
+        }
+    })
+}
+
+function renderizarCategorias(){
+    let categorias= new Set()
+    anuncios.forEach(anuncio =>{
+        let categoria = anuncio.category
+        categorias.add(categoria)
+    })
+    
+    let defaultOption = document.createElement('option');
+    defaultOption.innerHTML = "Selecciona una categoría";
+    defaultOption.selected = true;
+    defaultOption.disabled = true;
+    contenedorCategorias.appendChild(defaultOption);
+
+
+    categorias.forEach(categoria =>{
+        let option = document.createElement('option')
+        option.innerHTML = categoria
+        contenedorCategorias.appendChild(option)
+    })
+}
+
+function filtrarAnuncios(){
+    let busquedaAnuncios = buscarAnuncio(anuncios)
+    let categoriaAnuncios = categoriaAnuncio(busquedaAnuncios)
+
+    let maxMinAnuncios = minMaxAnuncio(categoriaAnuncios)
+    let anunciosOrdenados = ordenarAnuncio(maxMinAnuncios)
+    console.log(anunciosOrdenados);
+} 
+
+function minMaxAnuncio(matriz){
+    let min = Number(minPrecio.value)
+    let max = maxPrecio.value == '' ? Infinity : Number(maxPrecio.value)
+
+    let anunciosFiltrados = matriz.filter(anuncio => {
+        return Number(anuncio.price) >= min && Number(anuncio.price) <= max
+    })
+    return anunciosFiltrados
+}
+
+function buscarAnuncio(matriz){
+    let busqueda = buscador.value.toLowerCase()
+    let anunciosFiltrados= []
+
+    matriz.forEach(anuncio => {
+        if(anuncio.name.toLowerCase().includes(busqueda)){
+            anunciosFiltrados.push(anuncio)
+        }
+    })
+    return anunciosFiltrados
+}
+
+function categoriaAnuncio(matriz){
+    let categoriaSeleccionada = contenedorCategorias.value
+    let anunciosFiltrados = matriz.filter(anuncio => {
+        return anuncio.category === categoriaSeleccionada || categoriaSeleccionada == 'defaultOption'
+    })
+    return anunciosFiltrados
+}
+
+function ordenarAnuncio(matriz){
+    let tipoDeOrden = ordenar.value
+    switch (tipoDeOrden) {
+            case 'Más reciente':
+                matriz = matriz.sort((a, b)=> a.id - b.id)
+                return matriz
+            break;
+            case 'Más antiguo':
+                matriz = matriz.sort((a, b)=> b.id - a.id)
+                return matriz
+            break;
+            case 'A-Z':
+                matriz = matriz.sort((a, b)=> {
+                    let nombreA = a.name.toLowerCase()
+                    let nombreB = b.name.toLowerCase()
+
+                    if(nombreA < nombreB){
+                        return -1
+                    }
+                    if(nombreA > nombreB){
+                        return 1
+                    }
+                    return 0
+                })
+                return matriz
+            break;
+            case 'Z-A':
+                matriz = matriz.sort((a, b)=> {
+                    let nombreA = a.name.toLowerCase()
+                    let nombreB = b.name.toLowerCase()
+
+                    if(nombreA < nombreB){
+                        return 1
+                    }
+                    if(nombreA > nombreB){
+                        return -1
+                    }
+                    return 0
+                })
+                return matriz
+            break;
+            break;
+            case 'Mayor precio':
+                matriz = matriz.sort((a, b)=> b.price - a.price)
+                return matriz
+            break;
+            break;
+            case 'Menor precio':
+                matriz = matriz.sort((a, b)=> a.price - b.price)
+                return matriz
+            break;
+    
+        default:
+            break;
     }
-})
-console.log(anuncios);
+}
+
+renderizarAnuncios(contenedorHome, 5)
+renderizarAnuncios(contenedorLista, cantidadAnuncios)
+renderizarCategorias()
+
+btnFiltrar.addEventListener('click', filtrarAnuncios)

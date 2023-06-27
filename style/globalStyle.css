@@ -1,11 +1,25 @@
 :root{
-    --principal: rgba(241, 190, 88, 0.526);
-    --secundario:rgba(76, 55, 15, 0.526);
+    --principal: rgb(241, 190, 88);
+    --secundario:rgb(76, 55, 15);
     --degradado: linear-gradient(to right top, #f3da8f, #746222, #cbc36b);
 }
 
 body{
     overflow-x: hidden;
+    top: 0;
+    bottom: 0;
+}
+
+main{
+    display: flex;
+    margin: 0vh 10vw;
+    margin-top: 50vh;
+    max-width: 100vw;
+    flex-direction: column;
+}
+
+footer{
+    bottom: 0;
 }
 
 *{
@@ -78,6 +92,10 @@ a{
     outline: 2px solid var(--principal);
 }
 
+.filtrado_alto{
+    width: 12vw;
+}
+
 .titulo{
     font-size: 3rem;
     font-weight: lighter;
@@ -100,6 +118,16 @@ a{
 
 
 /************ ANUNCIO *************/
+
+.top_anuncios{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 12vh;
+} 
+
 .articulo_anuncio{
     position: relative;
     display: flex;
@@ -198,3 +226,4 @@ a{
     width: 11vw;
     margin: 1rem 0;
 }
+

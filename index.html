@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./style/img/notas.png" type="image/svg+xml">
     <title>Presto.es</title>
     <script src="https://kit.fontawesome.com/e48d166edc.js" crossorigin="anonymous"></script>
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fonts-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLKIlwQp6LFn18zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXge10g==" crossorigin="anonymous" /> -->
@@ -17,8 +18,8 @@
         <nav class="nav">
             <h2><i class="fa fa-coins"></i> Presto.es</h2>
             <ol class="nav_ol">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Anuncios</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="/pages/anuncios.html">Anuncios</a></li>
                 <li><a href="#">Categorias</a></li>
                 <li><a href="#">Perfil</a></li>
                 <li><div class="btn"><a id="text_btn" href="#">Crear anuncio</a></div></li>
@@ -41,11 +42,8 @@
         <section class="section2">
             <div class="section2_categories">
                 <input class="selector" type="text" placeholder="Buscar">
-                <select class="selector" name="seleccion" id="seleccion">
-                    <option value="default">Secciona una categoria</option>
-                    <option value="one">Uno</option>
-                    <option value="two">Dos</option>
-                    <option value="three">Tres</option>
+                <select class="selector" name="seleccion" id="categoriasAnuncios">
+                    
                 </select>
                 <input class="selector" type="text" placeholder="Buscar">
                 <div class="btn"><a id="text_btn" href="#">Buscar</a></div>
@@ -68,10 +66,10 @@
                     <h2 class="titulo">Trabaja <b>con nosotros</b></h2>
                     <p class="titulo_texto">Envia tu solicitud para formar parte de nuestro equipo</p>
                     <form action="" class="formulario">
-                        <input class="formulario_input" type="text" placeholder="Nombre">
-                        <input class="formulario_input" type="email" placeholder="Email">
-                        <textarea class="formulario_input" cols="30" rows="10" placeholder="Carta de presentación"></textarea>
-                        <div class="btn"><a id="text_btn" type="submit" href="#">Enviar solicitud</a></div>
+                        <input id="nombre" class="formulario_input" type="text" placeholder="Nombre">
+                        <input id="email" class="formulario_input" type="email" placeholder="Email">
+                        <textarea id="carta" class="formulario_input" cols="30" rows="10" placeholder="Carta de presentación"></textarea>
+                        <div id="btn" class="btn"><a id="text_btn" type="submit" href="#">Enviar solicitud</a></div>
                     </form>
                 </div>
             </div>
@@ -81,133 +79,8 @@
                 <h2 class="titulo">Nuestros últimos <b>anuncios</b></h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam maxime nostrum enim omnis non, ipsum provident quos accusamus sapiente.</p>
             </div>
-            <div class="ultimos_anuncios">
-                <article class="articulo_anuncio">
-                    <img src="https://picsum.photos/560/340" alt="">
-                    <span class="anuncio_estado disponible">Disponible</span>
-                    <div class="anuncio_texto">
-                        <span class="precio_articulo">1000$</span>
-                        <div class="texto_top">
-                            <h4>Articulo</h4>
-                            <span>Descripcion breve</span>
-                        </div>
-                        <div class="texto_botton">
-                            <span class="categoria_anuncio">
-                                <i class="fa fa-tag"></i>
-                                Categoria
-                            </span>
-                            <span class="fecha_anuncio">
-                                <i class="fa fa-calendar"></i>
-                                13/06/2023
-                            </span>
-                        </div>
-                    </div>
-                </article>
-                <article class="articulo_anuncio">
-                    <img src="https://picsum.photos/560/340" alt="">
-                    <span class="anuncio_estado vendido">Vendido</span>
-                    <div class="anuncio_texto">
-                        <span class="precio_articulo">1000$</span>
-                        <div class="texto_top">
-                            <h4>Articulo</h4>
-                            <span>Descripcion breve</span>
-                        </div>
-                        <div class="texto_botton">
-                            <span>
-                                <i class="fa fa-tag"></i>
-                                Categoria
-                            </span>
-                            <span>
-                                <i class="fa fa-calendar"></i>
-                                13/06/2023
-                            </span>
-                        </div>
-                    </div>
-                </article>
-                <article class="articulo_anuncio">
-                    <img src="https://picsum.photos/560/340" alt="">
-                    <span class="anuncio_estado disponible">Disponible</span>
-                    <div class="anuncio_texto">
-                        <span class="precio_articulo">1000$</span>
-                        <div class="texto_top">
-                            <h4>Articulo</h4>
-                            <span>Descripcion breve</span>
-                        </div>
-                        <div class="texto_botton">
-                            <span>
-                                <i class="fa fa-tag"></i>
-                                Categoria
-                            </span>
-                            <span>
-                                <i class="fa fa-calendar"></i>
-                                13/06/2023
-                            </span>
-                        </div>
-                    </div>
-                </article>
-                <article class="articulo_anuncio">
-                    <img src="https://picsum.photos/560/340" alt="">
-                    <span class="anuncio_estado disponible">Disponible</span>
-                    <div class="anuncio_texto">
-                        <span class="precio_articulo">1000$</span>
-                        <div class="texto_top">
-                            <h4>Articulo</h4>
-                            <span>Descripcion breve</span>
-                        </div>
-                        <div class="texto_botton">
-                            <span>
-                                <i class="fa fa-tag"></i>
-                                Categoria
-                            </span>
-                            <span>
-                                <i class="fa fa-calendar"></i>
-                                13/06/2023
-                            </span>
-                        </div>
-                    </div>
-                </article>
-                <article class="articulo_anuncio">
-                    <img src="https://picsum.photos/560/340" alt="">
-                    <span class="anuncio_estado vendido">Vendido</span>
-                    <div class="anuncio_texto">
-                        <span class="precio_articulo">1000$</span>
-                        <div class="texto_top">
-                            <h4>Articulo</h4>
-                            <span>Descripcion breve</span>
-                        </div>
-                        <div class="texto_botton">
-                            <span>
-                                <i class="fa fa-tag"></i>
-                                Categoria
-                            </span>
-                            <span>
-                                <i class="fa fa-calendar"></i>
-                                13/06/2023
-                            </span>
-                        </div>
-                    </div>
-                </article>
-                <article class="articulo_anuncio">
-                    <img src="https://picsum.photos/560/340" alt="">
-                    <span class="anuncio_estado disponible">Disponible</span>
-                    <div class="anuncio_texto">
-                        <span class="precio_articulo">1000$</span>
-                        <div class="texto_top">
-                            <h4>Articulo</h4>
-                            <span>Descripcion breve</span>
-                        </div>
-                        <div class="texto_botton">
-                            <span>
-                                <i class="fa fa-tag"></i>
-                                Categoria
-                            </span>
-                            <span>
-                                <i class="fa fa-calendar"></i>
-                                13/06/2023
-                            </span>
-                        </div>
-                    </div>
-                </article>
+            <div class="ultimos_anuncios anuncios_home">
+                
             </div>
         </section>
     </main>

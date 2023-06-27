@@ -1,0 +1,55 @@
+
+
+.top_anuncios img{
+    width: 100vw;
+    height: 60vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.top_anuncios h1{
+    position: absolute;
+    top: 30%;
+    z-index: 1000;
+    font-size: 2.5rem;
+}
+
+.top_anuncios b{
+    color: var(--principal);
+    font-size: 2.8rem;
+}
+
+.filtrar_anuncios{
+    width: 80vw;
+    height: 25vh;
+    background-color: var(--principal);
+    position: absolute;
+    z-index: 100000000;
+    top: 50%;
+    left: 10vw;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.filtrado_top{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 1rem;
+}
+
+.filtrado_top select{
+    width: 15vw;
+}
+
+.filtrado_bottom{
+    display: flex;
+    justify-content: end;
+}
+
+.filtrado_bottom select{
+    width: 15vw;
+}
