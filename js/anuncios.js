@@ -342,13 +342,13 @@ let btnFiltrar = document.getElementById('filtrar')
 let buscador = document.getElementById('buscadorAnuncios')
 let maxPrecio = document.getElementById('max')
 let minPrecio = document.getElementById('min')
-let ordenar = document.getElementById('oredenar')
+let ordenar = document.getElementById('ordenar')
 
-function renderizarAnuncios(contenedor, limite){
+function renderizarAnuncios(matriz, contenedor, limite){
     if(contenedor === null){
         return
     }
-    anuncios.forEach((element, i) => {
+    matriz.forEach((element, i) => {
         if (i <= limite){
         let article= document.createElement('article')
         article.classList.add('articulo_anuncio')
@@ -383,6 +383,36 @@ function renderizarAnuncios(contenedor, limite){
     })
 }
 
+function filtrarAnuncios(){
+    let busquedaAnuncios = buscarAnuncio(anuncios)
+    let categoriaAnuncios = categoriaAnuncio(busquedaAnuncios)
+
+    let maxMinAnuncios = minMaxAnuncio(categoriaAnuncios)
+    let anunciosOrdenados = ordenarAnuncio(maxMinAnuncios)
+    limpiarAnuncios()
+    renderizarAnuncios(anunciosOrdenados, contenedorLista, anunciosOrdenados.length)
+    console.log(anunciosOrdenados.length)
+}
+
+
+function limpiarAnuncios(){
+    let anuncios = document.querySelectorAll('article')
+    anuncios.forEach(anuncio => {
+        contenedorLista.removeChild(anuncio)
+    })
+}
+function buscarAnuncio(matriz){
+    let busqueda = buscador.value.toLowerCase()
+    let anunciosFiltrados= []
+
+    matriz.forEach(anuncio => {
+        if(anuncio.name.toLowerCase().includes(busqueda)){
+            anunciosFiltrados.push(anuncio)
+        }
+    })
+    return anunciosFiltrados
+}
+
 function renderizarCategorias(){
     let categorias= new Set()
     anuncios.forEach(anuncio =>{
@@ -403,34 +433,12 @@ function renderizarCategorias(){
         contenedorCategorias.appendChild(option)
     })
 }
-
-function filtrarAnuncios(){
-    let busquedaAnuncios = buscarAnuncio(anuncios)
-    let categoriaAnuncios = categoriaAnuncio(busquedaAnuncios)
-
-    let maxMinAnuncios = minMaxAnuncio(categoriaAnuncios)
-    let anunciosOrdenados = ordenarAnuncio(maxMinAnuncios)
-    console.log(anunciosOrdenados);
-} 
-
 function minMaxAnuncio(matriz){
     let min = Number(minPrecio.value)
     let max = maxPrecio.value == '' ? Infinity : Number(maxPrecio.value)
 
     let anunciosFiltrados = matriz.filter(anuncio => {
         return Number(anuncio.price) >= min && Number(anuncio.price) <= max
-    })
-    return anunciosFiltrados
-}
-
-function buscarAnuncio(matriz){
-    let busqueda = buscador.value.toLowerCase()
-    let anunciosFiltrados= []
-
-    matriz.forEach(anuncio => {
-        if(anuncio.name.toLowerCase().includes(busqueda)){
-            anunciosFiltrados.push(anuncio)
-        }
     })
     return anunciosFiltrados
 }
@@ -449,11 +457,11 @@ function ordenarAnuncio(matriz){
             case 'Más reciente':
                 matriz = matriz.sort((a, b)=> a.id - b.id)
                 return matriz
-            break;
+            
             case 'Más antiguo':
                 matriz = matriz.sort((a, b)=> b.id - a.id)
                 return matriz
-            break;
+            
             case 'A-Z':
                 matriz = matriz.sort((a, b)=> {
                     let nombreA = a.name.toLowerCase()
@@ -468,7 +476,7 @@ function ordenarAnuncio(matriz){
                     return 0
                 })
                 return matriz
-            break;
+            
             case 'Z-A':
                 matriz = matriz.sort((a, b)=> {
                     let nombreA = a.name.toLowerCase()
@@ -483,25 +491,26 @@ function ordenarAnuncio(matriz){
                     return 0
                 })
                 return matriz
-            break;
-            break;
+            
+            
             case 'Mayor precio':
                 matriz = matriz.sort((a, b)=> b.price - a.price)
                 return matriz
-            break;
-            break;
+            
+            
             case 'Menor precio':
                 matriz = matriz.sort((a, b)=> a.price - b.price)
                 return matriz
-            break;
+            
     
-        default:
-            break;
+        default: 
+            return matriz
+        
     }
 }
 
-renderizarAnuncios(contenedorHome, 5)
-renderizarAnuncios(contenedorLista, cantidadAnuncios)
+renderizarAnuncios(anuncios, contenedorHome, 5)
+renderizarAnuncios(anuncios, contenedorLista, cantidadAnuncios)
 renderizarCategorias()
 
 btnFiltrar.addEventListener('click', filtrarAnuncios)
