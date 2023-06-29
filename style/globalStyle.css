@@ -20,18 +20,33 @@ body{
     top: 0;
     bottom: 0;
     background-color: var(--dia);
+    color: var(--noche)
 }
 
 main{
     display: flex;
     margin: 0vh 10vw;
-    margin-top: 50vh;
+    margin-top: 40vh;
     max-width: 100vw;
     flex-direction: column;
 }
 
+
 footer{
     bottom: 0;
+}
+
+#luna{
+    color: var(--noche)
+}
+
+input, textarea{
+    background-color: var(--dia2);
+    color: var(--noche2);
+}
+
+select, option{
+    background-color: var(--dia2);
 }
 
 *{
@@ -54,13 +69,13 @@ footer{
     }
 
   *::-webkit-scrollbar-track {
-    background: #ffffff;
+    background: var(--dia);
     }
 
   *::-webkit-scrollbar-thumb {
     background-color: var(--principal);
     border-radius: 10px;
-    border: 3px solid #ffffff;
+    border: 1px solid #ffffff;
     }
 
 ul, ol{
@@ -191,7 +206,7 @@ a{
 .anuncio_texto{
     height: 25vh;
     position: relative;
-    background-color: white;
+    background-color: var(--dia);
 }
 
 .precio_articulo{
@@ -226,8 +241,9 @@ a{
     align-items: center;
     width: 100%;
     color: var(--principal);
-    border: 1px dashed var(--principal);
+    border-top: 1px dashed var(--principal);
 }
+
 
 .categoria_anuncio{
     width: 11vw;

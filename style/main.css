@@ -6,15 +6,23 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    width: 100vw;
 }
 
+.img_top{
+    position: relative;
+    height: 45vw;
+    overflow: hidden;
+    width: 100vw;
+}
 .section1_img{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 45vw;
-    width: 45vw;
     padding: 0 5vw;
+    width: 45.6vw;
+    
 }
 
 .section1_text{
@@ -23,6 +31,7 @@
     justify-content: space-between;
     height: 45vw;
     padding: 5vw;
+    width: 45vw;
 }
 
 .section1_text h1{
@@ -39,7 +48,8 @@
 }
 
 .circulo{
-    background-color: gray;
+    background-color: var(--secundario);
+    color: var(--noche);
     position: absolute;
     width: 3vw;
     height: 3vw;
@@ -50,9 +60,11 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    left: 37vw;
 }
 .circulo2{
-    background-color: gray;
+    background-color: var(--secundario);
+    color: var(--noche);
     position: absolute;
     width: 3vw;
     height: 3vw;
@@ -70,12 +82,12 @@
     padding: 1.5vw 1.5vw;
 }
 
-.circulo b{
+.circulo i{
     transition: 0.8s all ease-in;
 }
 
-.circulo:hover b{
-    color: white;
+.circulo:hover i{
+    color: var(--dia);
 }
 
 /***************** SECTION 2 *******************/
