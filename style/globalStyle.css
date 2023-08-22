@@ -262,8 +262,20 @@ a{
     /* Estilos para ipad */
     
 
+    .nav_toggle {
+        display: block; /* Mostrar el botón de toggle */
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    
     .nav_links {
-        display: none;
+        display: none; /* Ocultar los enlaces */
+    }
+    
+    .nav_links.show {
+        display: flex; /* Mostrar los enlaces cuando se activa el toggle */
+        flex-direction: column;
     }
 
     .nav_links.show {
