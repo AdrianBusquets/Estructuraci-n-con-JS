@@ -6,23 +6,23 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 100vw;
+    width: 73.75vw;
 }
 
 .img_top{
     position: relative;
     height: 45vw;
     overflow: hidden;
-    width: 100vw;
+    width: 45vw;
 }
-.section1_img{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 45vw;
-    padding: 0 5vw;
-    width: 45.6vw;
-    
+.img_top img{
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.img_top img.activo{
+    opacity: 1;
 }
 
 .section1_text{
@@ -60,7 +60,7 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    left: 37vw;
+    left: 49.5%;
 }
 .circulo2{
     background-color: var(--secundario);

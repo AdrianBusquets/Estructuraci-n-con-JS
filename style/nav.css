@@ -21,6 +21,12 @@ header{
     transition: all ease 0.6s;
 }
 
+
+.nav_link{
+    display: flex;
+}
+
+
 .nav_event{
     width: 100vw;
     margin: 0;

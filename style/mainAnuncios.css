@@ -25,7 +25,7 @@
 
 .filtrar_anuncios{
     width: 80vw;
-    height: 20vh;
+    height: 22vh;
     background-color: var(--principal);
     position: absolute;
     z-index: 100000000;
