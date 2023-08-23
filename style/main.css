@@ -30,8 +30,9 @@
     flex-direction: column;
     justify-content: space-between;
     height: 45vw;
-    padding: 5vw;
+    padding: 1vw 5vw;
     width: 45vw;
+
 }
 
 .section1_text h1{
@@ -162,7 +163,7 @@
 }
 
 .lista_categorias article h4{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .lista_categorias article span{

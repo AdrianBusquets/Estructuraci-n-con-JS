@@ -23,6 +23,15 @@ body{
     color: var(--noche)
 }
 
+a{
+    text-decoration: none;
+}
+
+li{
+    text-decoration: none;
+    list-style: none;
+}
+
 main{
     display: flex;
     margin: 0vh 10vw;
@@ -261,7 +270,7 @@ a{
 @media (max-width: 768px) {
     /* Estilos para ipad */
     
-
+/********************************NAV************************************/
     .nav_toggle {
         display: block; /* Mostrar el botón de toggle */
         display: flex;
@@ -282,22 +291,90 @@ a{
         display: flex;
         flex-direction: column;
     }
-    
-    .section1_img {
-        max-width: 100%;
-        height: auto;
+/***************************************************MAIN*************************************/
+
+    main{
+        margin-top: 20vh;
+    }
+    .section1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 73.75vw;
+    }
+
+    .img_top{
+        position: relative;
+        height: 45vw;
+        overflow: hidden;
+        width: 100%;
+    }
+    .img_top img{
+        width: 100%;
+        position: absolute;
+        opacity: 0;
+        transition: opacity 0.3s ease;
     }
     
-    .section1 {
-        padding: 50px 0; /* Añadido espaciado vertical */
+    .img_top img.activo{
+        opacity: 1;
+    }
+
+    .section1_text {
+        padding: 3vw; /* Ajusta el relleno según tus preferencias */
+        text-align: center;
+        overflow: hidden;
+        width: 100%;
+        margin-left: 1rem;
+    }
+    .section1_text h1 {
+        font-size: 1rem; /* Reduzco el tamaño de fuente para dispositivos más pequeños */
+    }
+
+    .section1_text p {
+        font-size: 0.5rem;
+        margin: 0.5rem 0;
+    }
+
+    .circulo {
+        top: 15vh;
+        bottom: 2vw;
+        left: 52%;
+    }
+
+    .circulo2 {
+        top: 25vh;
+        bottom: 8vw;
     }
     
     .section2 {
         padding: 30px 0; /* Añadido espaciado vertical */
     }
+
+    select{
+        font-size: 0.5rem;
+    }
     
     .section_anuncios {
         padding: 30px 0; /* Añadido espaciado vertical */
+    }
+
+    .main_article{
+        overflow: hidden;
+    }
+
+    article{
+        font-size: 0.9rem;
+    }
+
+    .div_formulario img{
+        height: 65vh;
+    }
+
+    .fondo_formulario{
+        height: 80vh;
     }
 
     .section_formulario,
@@ -305,12 +382,39 @@ a{
     padding: 20px 0; /* Añadido espaciado vertical */
     }
 
+    .articulo_anuncio{
+        width: 30vw;
+        height: 35vh;
+    }
+    .texto_top{
+        height: 15vh;
+    }
+
+    .texto_bottom{
+        height: 5vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+/************************************FOOTER**************************************************/
     .footer_section {
         width: 100%; /* Asegurarse de que las secciones del footer ocupen todo el ancho */
         margin-bottom: 20px; /* Espaciado inferior entre secciones del footer */
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
     
+/************************************PAGINA ANUNCIOS*******************************************/
 
+    .lista_anuncios{
+        margin-top: 30vh;
+    }
+
+    #filtrar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 

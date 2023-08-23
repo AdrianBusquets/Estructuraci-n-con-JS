@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', function() {
 const carousellContendeor = document.querySelector('.img_top')
 const carousellImg = document.querySelectorAll('.img_top img')
 const btn1 = document.querySelector('.circulo1')
@@ -35,3 +36,4 @@ function adelanteImg(){
 btn1.addEventListener('click', atrasImg)
 btn2.addEventListener('click', adelanteImg)
 enseñarImg()
+})
