@@ -30,15 +30,16 @@ header{
     display: flex;
 }
 
+.nav_ol{
+    display: flex;
+}
 
 .nav_event{
     width: 100vw;
     margin: 0;
 }
 
-.nav_ol{
-    display: flex;
-}
+
 
 .nav_ol li{
     padding: 0vw 2vw;
